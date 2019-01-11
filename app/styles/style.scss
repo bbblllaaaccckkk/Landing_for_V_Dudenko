@@ -6,6 +6,11 @@
     z-index: 1;
     padding: 30px 20px;
     font-family: 'Impact', 'fantasy', Georgia, 'Times New Roman', Times, serif;
+    
+    nav {
+        background: whitesmoke;
+        opacity: 0.8;
+    }
 
     img {
         background: white;
@@ -234,11 +239,6 @@ body {
             margin-top: 10px;
         }
         
-        .other-1 {
-            padding-left: 90px;
-        }
-
-       
     }
 }
 
@@ -259,15 +259,6 @@ body {
         height: 75vh;
 
     }
-    
-    .footer {
-        height: 25vh;
-
-        img:hover {
-            background: darkred;
-            cursor: pointer;
-        }
-    }
 
     .row {
         margin: 0 auto;
@@ -282,7 +273,46 @@ body {
         // align-content: center;
     }
 
+}
+
+.section-ColorTone {
+
+    background: url(../Images/background/transparent-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    
+
+    .container {
+        padding-top: 100px;
+        // background-color: rgba(255, 255, 255, 0.3);
+    }
+
+        
+
+    img {
+        width: 100%;
+        margin: 20px 0 20px 0;
+    }
+}
 
 
+.section-certificates {
 
+    background: url(../Images/background/transparent-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    
+
+    .container {
+        padding-top: 100px;
+        // background-color: rgba(255, 255, 255, 0.3);
+    }
+
+
+    img {
+        width: 100%;
+        margin: 20px 0 20px 0;
+    }
 }

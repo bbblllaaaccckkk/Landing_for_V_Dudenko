@@ -91,13 +91,14 @@ gulp.task('watch',function(){
     gulp.watch('app/styles/*.scss', ['reload-css']);
     // gulp.watch('app/images/**/*', ['images']);
 });
+
 gulp.task('clean', function(){
     return gulp.src('build')
     .pipe(clean());
 });
 
 gulp.task('run', function(){
-    runSequence('clean', 'images', 'html', 'reload-css', 'browser-sync', 'watch', 'bootstrapCss', 'bootsrapJs');
+    runSequence( 'clean', 'html', 'reload-css',  'watch', 'bootstrapCss', 'bootsrapJs', 'images', 'browser-sync');
 });
 
 gulp.task('default', ['run']); 
