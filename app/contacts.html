@@ -10,35 +10,34 @@
     <script src="js/jQuery-3.3.1.js"></script>
     <script src="js/bootstrap.js"></script>
 </head>
-<body class="contacts">
+<body>
     <header id="header">
         <div class="container">
             <div class="row">
                 <nav class="navbar navbar-expand-lg navbar-light w-100 rounded">
-                    <a class="navbar-brand" href="#"></a>
-                    <img src="./Images/Logo/logomak_logo(8).png">
-                    <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <a class="navbar-brand" href="Index.html"><img src="Images/Logo/logomak_logo(8).png"></a>
+                    <button class="navbar-toggler border-1" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                         <ul class="navbar-nav links text-right">
                             <li class="nav-item  text-uppercase">
-                                <a class="nav-link" href="./Index.html">Главная<span class="sr-only">(current)</span></a>
+                                <a class="nav-link" href="Index.html">Главная<span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item text-uppercase">
-                                <a class="nav-link" href="./ColorTone.html">Палитра цветов</a>
+                                <a class="nav-link" href="ColorTone.html">Палитра цветов</a>
                             </li>
                             <li class="nav-item text-uppercase">
-                                <a class="nav-link" href="#">Галерея</a>
+                                <a class="nav-link" href="gallery.html">Галерея</a>
                             </li>
                             <li class="nav-item text-uppercase">
-                                <a class="nav-link" href="./certificates.html">Сертификаты</a>
+                                <a class="nav-link" href="certificates.html">Сертификаты</a>
                                 </li>
                             <li class="nav-item text-uppercase">
-                                <a class="nav-link" href="#">Ремонт натяжных потолков</a>
+                                <a class="nav-link" href="repairs.html">Ремонт натяжных потолков</a>
                                 </li>
                             <li class="nav-item active text-uppercase">
-                                <a class="nav-link" href="./contacts.html">Контакты</a>
+                                <a class="nav-link" href="#">Контакты</a>
                             </li>
                         </ul>
                     </div>
@@ -46,23 +45,29 @@
             </div>
         </div>
     </header>
-
     <section class="section-contacts">
         <div class="container">
-            <div class="row col-lg-3 col-md-3 d-flex justify-content-center">
-                <form class="text-center ">
+            <div class="row col-lg-3 col-md-4">
+                <form class="text-center form">
+
+                    <!-- Hidden Required Fields -->
+                    <input type="hidden" name="project_name" value="stelidream">
+                    <input type="hidden" name="admin_email" value="super.guseynoff@gmail.com">
+                    <input type="hidden" name="form_subject" value="Заявка с сайта stelidream">
+                    <!-- END Hidden Required Fields -->
+
                     <div class="form-group">
                         <label for="exampleInputName1">Ваше имя</label>
-                        <input type="Name" class="form-control" id="exampleInputName1" aria-describedby="NameHelp" placeholder="Введите имя">
-                        <small id="NameHelp" class="form-text text-muted"></small>
+                        <input name="Имя" type="Name" class="form-control" id="exampleInputName1" aria-describedby="NameHelp" placeholder="Введите имя">
+                        <!-- <small id="NameHelp" class="form-text text-muted"></small> -->
                     </div>
                     <div class="form-group">
                         <label for="exampleInputPhone1">Телефон</label>
-                        <input type="Phone" class="form-control" id="exampleInputPhone1" placeholder="Введите телефон">
+                        <input name="Телефон" type="Phone" class="form-control" id="exampleInputPhone1" placeholder="Введите телефон">
                     </div>
                     <div class="form-group">
                         <label for="exampleFormControlTextarea1">Коментарий</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        <textarea name="Коментарий" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                         </div>
                     <button type="submit" class="btn btn-primary">Отправить</button>
                 </form>
@@ -75,7 +80,7 @@
         <div class="container justify-content-center d-flex">
             <div class="row align-items-center">
                 <div class="col-lg-3 col-md-3 col-sm-12 logo text-center">
-                    <img src="./Images/Logo/logomak_logo(8).png">
+                    <a href="Index.html"><img src="Images/Logo/logomak_logo(8).png"></a>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-12 other-1 ">
                     <h3>Город:</h3>
@@ -93,5 +98,6 @@
         </div>
         <div class="line-bottom"></div>
     </footer>
+    <script src="js/scriptForMail.js"></script>
 </body>
 </html>

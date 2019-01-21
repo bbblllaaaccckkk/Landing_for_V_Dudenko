@@ -49,6 +49,11 @@ gulp.task('bootsrapJs', function() {
     .pipe(gulp.dest('build/js'));
 });
 
+// gulp.task('fancybox', function() {
+//     return gulp.src('./app/fancybox/**/*')
+//     .pipe(gulp.dest('build/fancybox'));
+// });
+
 
 gulp.task('images', function(){
     return gulp.src("./app/images/**/*")
@@ -89,6 +94,7 @@ gulp.task('browser-sync', function(){
 gulp.task('watch',function(){
     gulp.watch('app/**/*.html', ['html']);
     gulp.watch('app/styles/*.scss', ['reload-css']);
+    gulp.watch('app/js/scriptForGallery.js', ['bootsrapJs']);
     // gulp.watch('app/images/**/*', ['images']);
 });
 
